@@ -49,20 +49,19 @@ footer {
 }
 
 .button1 {
-	margin-top: 30px;
-	margin: 0 10px;
 	background: #C86957;
 	border: 1px solid #C86957;
 	color: white;
-	padding: 15px 40px;
+	padding: 15px 0;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	width: 170px;
 	height: 52px;
+
 }
 
 .button2 {
-	margin: 30px 10px 115px 10px;
+	margin-bottom: 115px;
 	background: transparent !important;
 	border: 2px solid white;
 	color: white;
@@ -71,9 +70,8 @@ footer {
 	font-weight: 400;
 	width: 170px;
 	height: 52px;
-
-
 }
+
 .button3 {
 	margin: 10px 0 10px 0;
 	background: transparent !important;
@@ -86,6 +84,7 @@ footer {
 	height: 52px;
 
 }
+ 
 /****************intro******************/
 
 .section1 {
@@ -166,7 +165,7 @@ a.nav-link:hover {
      margin-bottom: 50px ;
 }
 
-.spacing {
+ .spacing {
 	letter-spacing: 3px;
 	color: white;
 	font-size: 16px;
@@ -178,32 +177,115 @@ a.nav-link:hover {
 	bottom: 150px;
 	opacity: 1;
 	align-items: center;
-}
+ }
 
-.carousel-item-description {
+ .carousel-item-description {
 	position: relative;
 	
+ }
+
+ .form-control {
+	border: 1px solid #C86957;
+	border-radius: unset;
+ }
+
+ .margin-text-top {
+	
+	margin-top: 20px;
+	font-weight: 400;
+	color: #999999;
+ }
+
+ .redesSociales {
+	margin: 10px 10px 0 0; 
+ }
+ .espacio {
+	letter-spacing: 3px;
+ }
+
+@media screen and (max-width: 500px){ 
+ .articulo h5 {
+	font-size: 22px;
+ }
+
+ .margin-text-top1 { 
+	margin-top: 30px;
+}
+.bloque {
+	text-align: center;
+}
+
+.secciones {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.encabezados {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 50px 0;
+	font-size: 36px;
+}
+.button3 {
+    margin: 10px 0 10px 0;
+    background: transparent !important;
+    border: 1px solid #C86957;
+    color: #C86957;
+    padding: 15px 38px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
+
+img.redesSociales {
+ 	height: 40px;
+}
+.button1 {
+	margin-top: 30px;
+	margin: 0 10px;
+	background: #C86957;
+	border: 1px solid #C86957;
+	color: white;
+	padding: 10px 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 300px;
+	height: 60px;
+	font-size: 20px;
+}
+
+.button2 {
+	margin: 30px 10px 115px 10px;
+	background: transparent !important;
+	border: 2px solid white;
+	color: white;
+	padding: 15px 38px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 300px;
+	height: 60px;
+	font-size: 20px;
 }
 
 .form-control {
 	border: 1px solid #C86957;
 	border-radius: unset;
+	font-size: 20px;
+	height: 52px;
+ }
+ .letra-movil {
+ 	font-size: 20px;
+ }
+
+a h6 {
+	font-size: 20px;
 }
 
-.margin-text-top {
-	
-	margin-top: 20px;
-	font-weight: 400;
-	color: #999999;
+
 }
-/*.margin-text-top1 { 
-	margin-top: 10px;
-}*/
-.redesSociales {
-	margin: 10px 10px 0 0; 
-}
-.espacio {
-	letter-spacing: 3px;
+
 }
 
 
