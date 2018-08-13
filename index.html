@@ -4,55 +4,69 @@
 	<meta charset="utf-8">
 	<meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Empresa fundada en 1995, líder en la renta de mobiliario para eventos sociales y empresariales.">
+    <meta name="keywords" content="Alma Morales, Alma Morales productos, Alma Morales muebles, Muebles, renta de muebles, muebles para boda, Renta para eventos, mobiliario para eventos, amorales, a morales">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-     <!-- Magnific popup -->
+    <title> AMorales Eventos</title>
+<!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Bootstrap flexbox -->
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+<!-- Magnific popup -->
     <link href="css/magnific-popup.css" rel="stylesheet">
-     <!-- owl carousel-->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <!-- Important Owl stylesheet -->
+<!-- owl carousel-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+<!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	  <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Raleway:100,300,400,500|Roboto:400,700" rel="stylesheet">
-    <!-- tabs-->
-    
-     <!-- Estilos -->
+<!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Raleway:100,300,400,500|Roboto:400,700" rel="stylesheet"> 
+<!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<title> AMorales</title>
 </head>
 <body>
 
 <section id="intro">
 	<div class="section1" >
+
 		<div class="row contentIntro ">
-				<figure class="col-xs-12 col-md-2" >
+			<figure class="col-xs-9 col-md-2" >
 				<img src="assets/icons/logo.png">
 			</figure>
-		<div class="nav col-xs-12 col-md-10">
-			<ul class="nav justify-content-end">
-			  <li class="nav-item">
-			    <a class="nav-link active" href="#">INICIO</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">NOSOTROS</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">PRODUCTOS</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">EVENTOS</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#Contacto">CONTACTO</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">MIS PRODUCTOS</a>
-			  </li>
-			</ul>
-		</div>
-	</div>
+      <div class="navbar-header menuHamburguesa col-xs-3 col-md-1">
+      <a  class=" navbar-toggle pull-xs-right hidden-sm-up" data-toggle="collapse" href="#menu-hambuerguesa" role="button" aria-expanded="false" aria-controls="menu-hambuerguesa">
+        <img src="assets/icons/menu.png" alt="menu">
+      </a>
+    </div>
+
+      <div class="nav col-xs-12 col-md-9">
+        <nav class="navbar-custom" role="navigation">
+          <div id="menu-hambuerguesa" class="navbar-toggleable-xs navbar  collapse" >
+            <ul class="nav ">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MIS PRODUCTOS</a>
+                </li>
+            </ul>
+          </div>
+         
+        </nav>
+        
+      </div>
+  </div>
 
 	<div class="row ">
 		<div class="col-xs-12 col-md-12 col-lg-12 text-align-center contentSect1">
@@ -321,7 +335,7 @@
 
 				<button type="submit" class="button3">
 									Enviar
-				</button><br>
+				</button><br><br>
       <div class=" bloque">
         <span class="margin-text-top1 letra-movil ">Siguenos</span><br>
         <a href="#"><img class="redesSociales" src="assets/icons/fb.png"></a>
@@ -384,9 +398,8 @@
 <!-- Carousel -->
 		<script src="js/owl.carousel.min.js"></script>
 <!-- Tabs --->
-  		<script type="text/javascript" src="js/tabs/jquery.tabslet.min.js"></script>
+  		<script src="js/jquery.tabslet.min.js"></script>
   
-
 
 	<script >
 		$(function() {
@@ -394,8 +407,8 @@
   					link.click(function() {
     				link.removeClass('active');
     				$(this).addClass('active');
-  });
-});
+      });
+    });
 	</script>
   	<script >
 		$('.tabs').tabslet();
@@ -437,7 +450,7 @@
     $("#intro").backstretch([
       'assets/images/bg1.jpg',
       'assets/images/bg6.jpg',
-      'assets/images/1.jpg',
+      'assets/images/bg5.jpg',
       
 
     ], {
