@@ -168,9 +168,9 @@ font-family: 'Raleway', sans-serif;
 	letter-spacing: 3px;
 	color: white;
 	font-size: 16px;
-	font-weight: 600; 
+	font-weight: 500; 
 	text-align: center;
-	background: rgba(34, 34, 34, .4) !important;
+	background: rgba(34, 34, 34, .5) !important;
 	position: relative;
 	padding: 15px;
 	bottom: 150px;
@@ -203,6 +203,44 @@ font-family: 'Raleway', sans-serif;
  div.bloque {
 	text-align: left;
  }
+
+
+
+ /****************  P R O D  U C T O S  ******************/
+
+ .productos {
+	text-transform: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+	color: white;
+	font-size: 15px;
+	font-weight: 500; 
+	text-align: center;
+	background: rgba(34, 34, 34, .5) !important;
+	position: relative;
+	padding: 15px;
+	bottom: 150px;
+	opacity: 1;
+	align-items: center;
+	display: list-item;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------ Ipad o tablet-------------------*/
 @media screen and (max-width:1050px) {
