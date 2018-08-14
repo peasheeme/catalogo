@@ -2,6 +2,7 @@
 	background-color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
+
  }
 
 
@@ -94,23 +95,24 @@ font-family: 'Raleway', sans-serif;
  a.nav-link {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
+	padding-left: 10px;
+	padding-right:15px;
  }
  a.nav-link:hover, a.nav-link:focus {
 	color: #C86957;
  }
 
  #intro {
-	background: rgba(34, 34, 34, .5) !important;
+	background: rgba(34, 34, 34, .6) !important;
 	z-index: auto !important;
 	padding: 0 0 50px 0;
 	text-align: center;
  }
-
- .nav-item {
-	margin: 10px 5px;
-	text-align: right;
- }
+ /*.navegacion {
+ 	position: relative;
+ }*/
+ 
  .nav {
 	justify-content: flex-end;
  }
@@ -124,13 +126,13 @@ font-family: 'Raleway', sans-serif;
 
  .contentSect1 h1 {
 	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 400;
+	 font-weight: 300;
 	 font-size: 46px;
  }
 
  .contentSect1 h5 {
 	 font-family: 'Raleway', sans-serif;
-	 font-weight: 500;
+	 font-weight: 400;
  }
  
  .articulo {
@@ -168,7 +170,7 @@ font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 600; 
 	text-align: center;
-	background: rgba(34, 34, 34, .3) !important;
+	background: rgba(34, 34, 34, .4) !important;
 	position: relative;
 	padding: 15px;
 	bottom: 150px;
@@ -198,9 +200,70 @@ font-family: 'Raleway', sans-serif;
  .espacio {
 	letter-spacing: 3px;
  }
-/*------------------------Celular-------------------*/
-@media screen and (max-width: 650px) {
-	.button2 {
+ div.bloque {
+	text-align: left;
+ }
+
+/*------------------------ Ipad o tablet-------------------*/
+@media screen and (max-width:1050px) {
+
+ a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 15px;	
+	
+
+ }
+ .nav {
+ 	justify-content: center;
+ }
+
+ }
+/*------------------------ Ipad o tablet-------------------*/
+
+ @media screen and (max-width:990px) {
+
+ a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;	
+	
+
+ }
+ .nav {
+ 	justify-content: center;
+ }
+
+ }
+/*------------------------ Ipad o tablet-------------------*/
+
+ @media screen and (max-width:800px) {
+
+ a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;	
+	font-size: 15px;
+
+ }
+
+ }
+
+ /*------------------------ Ipad o tablet-------------------*/
+
+ @media screen and (max-width: 767px) {
+ .nav {
+ 	justify-content: center;
+ }
+ img.logo {
+ 	justify-content: center;
+ }
+
+ .button2 {
 	margin-top: 20px;
     margin-bottom: 115px;
     background: transparent !important;
@@ -213,16 +276,78 @@ font-family: 'Raleway', sans-serif;
     height: 52px;
 	}
 
-	div.bloque {
+ div.bloque {
 	justify-content: flex-start;
  }
 
  figure.col-xs-9.col-md-2.justify-content-start {
  	    text-align: left;
+}
+
+a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;	
+	padding-right: 200px;
+	padding-left: 200px;
+
  }
+ a.nav-link.active{
+ 	background: transparent !important;
+ 	 }
+
  .nav {
- 	justify-content: center;
+	justify-content: flex-center;
+	background: rgba(34, 34, 34, .5) !important;
  }
+
+
+
+ }
+
+
+ @media screen and (max-width: 747px){
+ a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;	
+	padding-right: 200px;
+	padding-left: 200px;
+
+ }
+ a.nav-link.active{
+ 	background: transparent !important;
+ 	 }
+
+ .nav {
+	justify-content: flex-center;
+	background: rgba(34, 34, 34, .5) !important;
+ }
+}
+/*------------------------ipad mini-------------------*/
+@media screen and (max-width: 600px) {
+	
+  a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;	
+	padding-right: 100px;
+	padding-left: 100px;
+
+ }
+ a.nav-link.active{
+ 	background: transparent !important;
+ 	 }
+
+ .nav {
+	justify-content: flex-center;
+	background: rgba(34, 34, 34, .5) !important;
+ }
+
+
  }
 
 /*------------------------Celular-------------------*/
@@ -231,6 +356,10 @@ font-family: 'Raleway', sans-serif;
  .contentSect1 h1 {
 	font-size: 30px;
  }
+ /* img.burguer {
+  	padding-top: 0;
+  	padding-right: 0px;
+  }*/
  .articulo h5 {
 	font-size: 15px;
  }
@@ -238,13 +367,13 @@ font-family: 'Raleway', sans-serif;
  .margin-text-top1 { 
 	margin-top: 30px;
  }
- .bloque {
+ div.bloque {
 	text-align: center;
  }
 
  .secciones {
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 65px;
  }
 
  .encabezados {
@@ -263,7 +392,7 @@ font-family: 'Raleway', sans-serif;
     font-weight: 400;
     width: 100%;
     height: 60px;
-    font-size: 17px;
+    font-size: 16px;
  }
 
  img.redesSociales {
@@ -311,15 +440,18 @@ font-family: 'Raleway', sans-serif;
 
  }
  .menuHamburguesa {
-	text-align: right;
-	margin-top : 20px;
+	text-align: left;
+	justify-content: flex-start;
 	z-index: 3;
  }
 
  a.nav-link {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
+	padding-right: 30px;
+	padding-left: 30px;
+
  }
 
  li.nav-item {
@@ -335,32 +467,25 @@ font-family: 'Raleway', sans-serif;
 
 }
 
+@media screen and (max-width: 367px) {
+ a.nav-link {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	
+	font-size: 10px;
 
+ }
 
+ li.nav-item {
+	margin: 10px 50px;
+	text-align: center;
+	justify-content: center;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-  
+ .nav {
+	justify-content: flex-center;
+	background: rgba(34, 34, 34, .5) !important;
+ }
 }
+
