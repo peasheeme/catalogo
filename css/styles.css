@@ -1,0 +1,83 @@
+div.sample {
+	    padding: 135px 265px;
+    margin: 167px 0 78px 0;
+    border: 1px solid #e1e1e1;
+}
+
+.mask6{
+	position:absolute;
+	bottom: 50%;
+	margin-left:-120px;
+	width:600px;
+	height:600px;
+	overflow:hidden;
+}
+#box7{
+	position:absolute;
+}
+#box7 span{
+	display:block;
+	float:left;
+}
+--------------
+#thumbs7{
+	position:relative;
+	width:486px;
+	clear:both;
+	height:41px;
+	overflow:hidden;
+	margin-top:200px;
+}
+#thumbs7 .thumbs, #thumbs_handles7, #thumbs_mask7{
+	position:absolute;
+	top:450px;
+	width:100%;
+	height:100px;
+}
+#thumbs7 .thumbs div, #thumbs_handles7 span{/* ubicacion de las fotos de abajo*/
+	display:block;
+	width:60px;
+	height:41px;
+	margin:0;
+	float:left;
+	cursor:pointer;
+}
+#thumbs7 .thumbs div img{ /* separacion entre fotos*/
+	width:54px;
+	float:right;
+}
+#thumbs_handles7 span{
+	background:url(thumb_invisible.gif) no-repeat;
+}
+#thumbs_mask7{
+	width:1200px;
+	background:url(thumbs_mask.gif) no-repeat center top;
+}
+
+
+
+/* ********************************** */
+
+.thumbs{
+	width:100px;
+}
+.thumbs div{
+	display:block;
+	width:100px;
+	height:41px;
+	margin:3px 0;
+	cursor:pointer;
+}
+
+.thumbs div img{
+	display:block;
+	width:100%;
+	height:100%;
+	border:none
+}
+
+
+span img{
+	display:block;
+	border:none;
+}

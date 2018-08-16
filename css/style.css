@@ -4,7 +4,9 @@
 	margin: 0;
 
  }
-
+#mdialTamanio{
+      width: 80% !important;
+    }
 
 /*
 font-family: 'Montserrat', sans-serif;
@@ -223,12 +225,74 @@ font-family: 'Raleway', sans-serif;
 	opacity: 1;
 	align-items: center;
 	display: list-item;
+ }  
+/*------------------------ Manteleria ------------------------*/
+.portfolio-item-description {
+ 	color: #C86957;
+ 	font-size: 14px;
+
+ }
+
+ button.colores{
+ 	width: 50px;
+ 	height: 50px;
+ 	border: transparent;  
+ 	margin-right: 10px;
+ }
+ .colores.dorado {
+	background-image: url("../assets/productos/manteleria/manteles/BallyGold.png");
+	
+ }
+ button.colores.plata {
+	background-image: url("../assets/productos/manteleria/manteles/BallySilver.png");
+	
+ }
+
+ .coloress {
+
  }
 
 
 
+/*------------------------ tabs ------------------------*/
+ul.tabs.coloress{
+	position:absolute;
+	right:20%;
+	/*top:25px;
+	width: 652px;*/
+}
+ul.tabs.coloress li {float:left;line-height:1.2em;padding-left:10px}
+.tabs.coloress li a {color:#fff;display:block;float:left;text-decoration:none;
+	cursor:pointer}
+.tabs.coloress li a:hover, ul.tabs li.active a {color:#ffc632}
+.tabs.coloress li a span {display:block;float:left;padding:0 9px;
+	background:url(../images/button-right.png) no-repeat right top}
+.tabs.coloress li a span span {padding:9px 18px 8px 18px;}
+.tab_container {position:relative;top:126px;width:100%}
+/* faded gallery */
+.faded {width:888px;height:341px;margin:0 auto;position:relative}
+.faded ul.big-image {list-style:none;padding:0;margin:0;width:653px;height:341px;float:right;}
+.faded ul.big-image li {padding:9px 0 0 9px;width:635px;height:323px}
+.pagination {list-style:none;padding:0;margin:0;background:none;width:auto;height:auto;position:absolute;left:0;top:0}
+.pagination li {width:183px;height:99px;margin-bottom:22px;}
+.pagination li a {padding:9px 0 0 9px;display:block}
+.pagination li.current a {}a {outline:0;border:0}
+
+/*------------------------ Manteles ------------------------*/
+
+ 
+
+.titulos {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 25px 0;
+	font-size: 36px;
+	text-align: center
+ }
 
 
+
+/* ********************************  end seccion de fotos  *************************/
 
 
 

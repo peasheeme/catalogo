@@ -11,14 +11,16 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Bootstrap flexbox -->
     <link rel="stylesheet" href="css/bootstrap-flex.min.css">
-<!-- Magnific popup -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
+
 <!-- owl carousel-->
     <link href="css/owl.carousel.min.css" rel="stylesheet">
 <!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Raleway:100,300,400,500|Roboto:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Raleway:100,300,400,500|Roboto:400,700" rel="stylesheet">
+<!-- Modales full screen-->   
+    <!--<link rel="stylesheet" href="css/normalize.min.css">-->
+    <link rel="stylesheet" href="css/animate.min.css"> 
 <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -73,7 +75,7 @@
 
 	<div class="row zindex ">
 		<div class="col-xs-12 col-md-12 col-lg-12 text-align-center contentSect1">
-			<h1> CONOCE NUESTROS PRODUCTOS</h1>
+			<h1>  PRODUCTOS</h1>
 			<br><br>
 		</div>
 	</div>
@@ -81,15 +83,15 @@
 	
 </section>
 
+
+
 <section class="secciones" >
 	 <div class="container">
 
-	 	
-	 	<div class="row">
 
-	 		
+	 	<div class="row">
          	 <div class=" col-xs-12 col-md-4 col-lg-3">
-	          <a href="assets/images/p5.jpg" class="image-popup-vertical-fit" alt="manteleria">
+	           	<a  href="manteleria.html">
 	          <div class="portfolio-item">
 	            <div class="preview">
 	              <img src="assets/images/p5.jpg">
@@ -242,25 +244,13 @@
 	            </a>
          	 </div>
 
-          
-
-          
-
 	 	</div>
 
 	 </div>
 </section>
 
 
-
-
-
-
-
-
-
-
-
+        
 <footer>
     <span class="espacio">Alma Morales Eventos </span> © Copyright 2018 <br>
        <div class="flex-items-middle">  Creación y Diseño por <a href="https://kalamedia.mx/" target="_blank"> <img src="assets/icons/kala.png"></a>
@@ -277,115 +267,16 @@
   		<script src="js\jquery.backstretch.min.js"></script>
 <!-- Data aos -->
     	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<!-- Magnific popup -->
-     	<script src="js/jquery.magnific-popup.min.js"></script>
+
 <!-- Carousel -->
 		<script src="js/owl.carousel.min.js"></script>
 <!-- Tabs --->
   		<script src="js/jquery.tabslet.min.js"></script>
-  
-<script>
-    $("#intro").backstretch([
-      'assets/images/flayer1.jpg',
-      'assets/images/flayer4.jpg',
-      'assets/images/flayer5.jpg',
-      
+<!-- Mi javascript --->
+      	<script src="js/javascript.js"></script>
 
-    ], {
-      fade: 750,
-      duration: 4000
-  });
-    </script>
-	<script >
-		$(function() {
-  			var link = $(".text a");
-  					link.click(function() {
-    				link.removeClass('active');
-    				$(this).addClass('active');
-      });
-    });
-	</script>
-  	<script >
-		$('.tabs').tabslet();
-	</script>
 
-	<script>
-		 var owl = $('.owl-carousel');
-		 owl.owlCarousel({
-	    loop:true,
-	    margin:10,
-	    autoplay:true,
-	    autoplayTimeout:2000,
-	    autoplayHoverPause:true,
-      responsiveClass:true,
-      responsive : {
-        0 : { items: 1,
-              nav: true 
-        },
-        600 : { items: 3 ,
-                nav: false 
-        },
-        1000 : { items: 5,
-            nav:true,
-            loop:false
-        }
-      }
-	   });
-		$('.play').on('click',function(){
-		    owl.trigger('play.owl.autoplay',[2000])
-		})
-		$('.stop').on('click',function(){
-		    owl.trigger('stop.owl.autoplay')
-		})
-	</script>
-
-    <script>
-        $(document).ready(function() {
-          $('.image-popup-vertical-fit').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            mainClass:'mfp-fade',
-            gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-            },
-            image: {
-            verticalFit: true,
-            }
-          });
-        });
-      </script>
-
-      <script>
-      	$(document).ready(function() {
-    $("#myCarousel").on("slide.bs.carousel", function(e) {
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $(".carousel-item").length;
-
-    if (idx >= totalItems - (itemsPerSlide - 1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i = 0; i < it; i++) {
-        // append slides to end
-        if (e.direction == "left") {
-          $(".carousel-item")
-            .eq(i)
-            .appendTo(".carousel-inner");
-        } else {
-          $(".carousel-item")
-            .eq(0)
-            .appendTo($(this).find(".carousel-inner"));
-        }
-      }
-    }
-  });
-});
-      </script>
-    <script>
-      AOS.init();
-    </script>
+   
 
 </body>
 </html>
