@@ -87,6 +87,7 @@ font-family: 'Raleway', sans-serif;
 	width: 170px;
 	height: 52px;
  }
+  
  
 /****************intro******************/
 
@@ -111,10 +112,7 @@ font-family: 'Raleway', sans-serif;
 	padding: 0 0 50px 0;
 	text-align: center;
  }
- /*.navegacion {
- 	position: relative;
- }*/
- 
+y 
  .nav {
 	justify-content: flex-end;
  }
@@ -233,6 +231,105 @@ font-family: 'Raleway', sans-serif;
 
  }
 
+ 
+
+
+
+/*------------------------ tablas Modales ------------------------*/
+.seccionModal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+ }
+.tabs.coloress li a {
+	text-decoration:none;
+	cursor:pointer
+}
+
+/* Tamanio que va a medir la caja de la foto*/
+.faded ul.big-image li {
+	max-width: 100%;
+	height: auto;
+	position: relative;
+}
+
+ul.pagination li  {
+	display: inline-block;
+	/*width: 139px;*/
+	width: 142px;
+}
+
+.pagination {
+	list-style:none;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -7%;
+	margin-left: -15px;
+	margin-bottom: 0px;
+	}
+
+
+/*------------------------ Manteles ------------------------*/
+
+.titulos {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	margin: 25px 0;
+	font-size: 32px; 
+ }
+ .coloress {
+	padding:20px 10px 20px 0; 
+ }
+ .button4 {
+	background: #C86957;
+	border: 1px solid #C86957;
+	color: white;
+	padding: 15px ;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 190px;
+	height: 52px;
+	margin-bottom: 35px;
+	margin-left: 35px;
+ }
+ .button5 {
+	background: #C86957;
+	border: 2px solid #C86957;
+	color: white;
+	padding: 15px ;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 190px;
+	height: 52px;
+	margin-bottom: 35px;
+	margin-left: 35px;
+ }
+  .button6 {
+	margin-bottom: 115px;
+	background: transparent !important;
+	border: 2px solid #C86957;
+	color: #C86957;
+	padding: 15px 38px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 190px;
+	height: 52px;
+	margin-left: 20px;
+ }
+ .mantel {
+ 	margin-left: 35px;
+ }
+ h5.mantel {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+ }
+ p.mantel {
+ 	margin-top: 20px;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #999999;
+ }
  button.colores{
  	width: 50px;
  	height: 50px;
@@ -241,70 +338,33 @@ font-family: 'Raleway', sans-serif;
  }
  .colores.dorado {
 	background-image: url("../assets/productos/manteleria/manteles/BallyGold.png");
-	
  }
  button.colores.plata {
 	background-image: url("../assets/productos/manteleria/manteles/BallySilver.png");
-	
  }
-
- .coloress {
-
- }
-
-
-
-/*------------------------ tabs ------------------------*/
-ul.tabs.coloress{
-	position:absolute;
-	right:20%;
-	/*top:25px;
-	width: 652px;*/
-}
-ul.tabs.coloress li {float:left;line-height:1.2em;padding-left:10px}
-.tabs.coloress li a {color:#fff;display:block;float:left;text-decoration:none;
-	cursor:pointer}
-.tabs.coloress li a:hover, ul.tabs li.active a {color:#ffc632}
-.tabs.coloress li a span {display:block;float:left;padding:0 9px;
-	background:url(../images/button-right.png) no-repeat right top}
-.tabs.coloress li a span span {padding:9px 18px 8px 18px;}
-.tab_container {position:relative;top:126px;width:100%}
-/* faded gallery */
-.faded {width:888px;height:341px;margin:0 auto;position:relative}
-.faded ul.big-image {list-style:none;padding:0;margin:0;width:653px;height:341px;float:right;}
-.faded ul.big-image li {padding:9px 0 0 9px;width:635px;height:323px}
-.pagination {list-style:none;padding:0;margin:0;background:none;width:auto;height:auto;position:absolute;left:0;top:0}
-.pagination li {width:183px;height:99px;margin-bottom:22px;}
-.pagination li a {padding:9px 0 0 9px;display:block}
-.pagination li.current a {}a {outline:0;border:0}
-
-/*------------------------ Manteles ------------------------*/
-
- 
-
-.titulos {
- 	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
-	margin: 25px 0;
-	font-size: 36px;
-	text-align: center
- }
-
-
 
 /* ********************************  end seccion de fotos  *************************/
 
 
+@media screen and (max-width:1200px) {
+ul.pagination li  {
+	display: inline-block;
+	/*width: 139px;*/
+	width: 108px;
+}
+.pagination {
+	list-style:none;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 20%;
+	margin-left: -15px;
+	margin-bottom: 0px;
+	
+	}
 
-
-
-
-
-
-
-
-
-
+}
 
 /*------------------------ Ipad o tablet-------------------*/
 @media screen and (max-width:1050px) {
@@ -325,18 +385,47 @@ ul.tabs.coloress li {float:left;line-height:1.2em;padding-left:10px}
  }
 /*------------------------ Ipad o tablet-------------------*/
 
- @media screen and (max-width:990px) {
+ @media screen and (max-width:992px) {
 
  a.nav-link {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	text-align: center;	
-	
-
  }
  .nav {
  	justify-content: center;
+ }
+ 
+ul.pagination li  {
+	display: inline-block;
+	/*width: 139px;*/
+	width: 108px;
+}
+
+.pagination {
+	list-style:none;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -1%;
+	margin-left: -15px;
+	margin-bottom: 0px;
+	
+	}
+
+ .button5 {
+	background: #C86957;
+	border: 2px solid #C86957;
+	color: white;
+	padding: 15px ;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 190px;
+	height: 52px;
+	margin-bottom: 35px;
+	margin-left: -14px;
  }
 
  }
@@ -403,6 +492,50 @@ a.nav-link {
 	justify-content: flex-center;
 	background: rgba(34, 34, 34, .5) !important;
  }
+/**/
+ ul.pagination li  {
+	display: inline-block;
+	/*width: 139px;*/
+	width: 127px;
+}
+
+.pagination {
+	list-style:none;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -1%;
+	margin-left: -15px;
+	margin-bottom: -430px;
+	
+	}
+
+	
+	.mantel {
+		margin-left: -15px;
+		margin-top: -20px;
+	}
+	.descript {
+		margin-top: 400px;
+	}
+	.desc {
+		margin-top: -90px;
+	}
+
+	.peque{
+		margin-top: 420px;
+	}
+
+	
+ 	.titulos {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	margin-top: 0;
+	font-size: 32px; 
+ }
+
+
 
 
 
