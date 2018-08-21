@@ -13,6 +13,9 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
+html {
+ overflow-x:hidden;
+ }
  img{ 
 	max-width: 100%;
 	height: auto;
@@ -31,6 +34,8 @@ font-family: 'Raleway', sans-serif;
 	background-color: #C86957;
 	text-align: center;
  }
+
+
  .menuHamburguesa {
 	text-align: left;
 	justify-content: flex-start;
