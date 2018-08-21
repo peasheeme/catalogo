@@ -26,7 +26,7 @@ font-family: 'Raleway', sans-serif;
  }
 
  footer {
-	padding: 70px 0;
+	padding: 40px 0;
 	color: white;
 	background-color: #C86957;
 	text-align: center;
@@ -61,6 +61,7 @@ font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	width: 190px;
 	height: 52px;
+	marg
 
  }
 
@@ -203,7 +204,19 @@ y
  div.bloque {
 	text-align: left;
  }
+ /****************  E V E  N T O S   ******************/
+.button7 {
+	background: #C86957;
+	border: 1px solid #C86957;
+	color: white;
+	padding: 15px 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 150px;
+	height: 52px;
+	margin: 10px 5px;
 
+ }
 
 
  /****************  P R O D  U C T O S  ******************/
@@ -228,6 +241,7 @@ y
  .productos:hover {
  	text-decoration: none;
  	text-decoration-line: none;
+ 	cursor:pointer;
 
  } 
 /*------------------------ Manteleria ------------------------*/
@@ -241,13 +255,15 @@ y
 	font-weight: 500; 
 	text-align: center;
 	text-transform: none;
-
+	cursor:pointer;
  }
 
+
+ .portfolio-item, .portfolio-item-description:focus {
+ 	cursor:pointer;
+ 	color: #C86957;
+}
  
-
-
-
 /*------------------------ tablas Modales ------------------------*/
 .seccionModal {
 	margin-top: 20px;
@@ -255,7 +271,7 @@ y
  }
 .tabs.coloress li a {
 	text-decoration:none;
-	cursor:pointer
+	cursor:pointer;
 }
 
 /* Tamanio que va a medir la caja de la foto*/
@@ -329,6 +345,24 @@ ul.pagination li  {
 	width: 190px;
 	height: 52px;
 	margin-left: 20px;
+ }
+
+ h5.manteles {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+
+ }
+ h3.manteles {
+ 	padding-top: 20px;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 32px; 
+ }
+p.manteles {
+ 	margin-top: 20px;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #999999;
  }
  .mantel {
  	margin-left: 35px;
@@ -506,6 +540,17 @@ a.nav-link {
 	background: rgba(34, 34, 34, .5) !important;
  }
 
+
+
+
+.faded ul.big-image li {
+	max-width: 550px;
+	height: auto;
+	margin-top: 25px;
+	padding-right: 25px;
+
+}
+
  ul.pagination li  {
 	display: inline-block;
 	/*width: 139px;*/
@@ -517,40 +562,22 @@ a.nav-link {
 	max-width: 100%;
 	height: auto;
 	position: absolute;
-	bottom: -200%;
+	bottom: -1%;
 	margin-left: -15px;
 	margin-bottom: 0px;
 	
 	}
 
-/*.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: -1%;
-	margin-left: -15px;
-	margin-bottom: -430px;
-	
-	}*/
-
-.faded ul.big-image li {
-	margin-top: 80px;
-	max-width: 100%;
-	height: auto;
-	position: relative;
-}
 	.coloress {
     padding: 3px 10px 20px 0;
     margin-left: 0px;
 }
 	.mantel {
 		margin-left: -15px;
-		margin-top: -20px;
-	}
+			}
 	.descript {
-		margin-top: 455px;
+		margin-top: 400px;
+		position: relative;
 	}
 	.desc {
 		margin-top: -90px;
@@ -559,17 +586,8 @@ a.nav-link {
 	.peque{
 		margin-top: 420px;
 	}
-
-	
- 	.titulos {
- 	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	margin-top: 0;
-	font-size: 32px; 
+ 
  }
-
-
-
 
 
  }
@@ -636,17 +654,7 @@ a.nav-link {
 	width: 127px;
 }
 
-.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: -1%;
-	margin-left: -15px;
-	margin-bottom: -430px;
-	
-	}
+
 
 	
 	.mantel {
