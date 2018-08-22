@@ -256,6 +256,10 @@ html {
  	cursor:pointer;
 
  } 
+
+ .seleccion {
+ 	cursor:pointer;
+ }
 /*------------------------ Manteleria ------------------------*/
 .portfolio-item-description {
  	color: #7C7777;
@@ -424,6 +428,9 @@ ul.pagination li  {
 	}
 
 }
+html {
+ overflow-x:hidden;
+ }
 
 /*------------------------ Ipad o tablet-------------------*/
 @media screen and (max-width:1050px) {
@@ -501,6 +508,9 @@ ul.pagination li  {
 
  }
 
+ }
+ html {
+ overflow-x:hidden;
  }
 
  /*------------------------ Ipad o tablet-------------------*/
@@ -599,9 +609,9 @@ a.nav-link {
 		margin-top: 420px;
 	}
  
+ html {
+ overflow-x:hidden;
  }
-
-
  }
 
 
@@ -665,7 +675,9 @@ a.nav-link {
 	/*width: 139px;*/
 	width: 127px;
 }
-
+html {
+ overflow-x:hidden;
+ }
 
 
 	
