@@ -4,15 +4,23 @@
 	margin: 0;
 
  }
-#mdialTamanio{
-      width: 80% !important;
-    }
 
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
 html {
  overflow-x:hidden;
  }
@@ -34,13 +42,17 @@ html {
 	background-color: #C86957;
 	text-align: center;
  }
-
-
+ 
  .menuHamburguesa {
 	text-align: left;
 	justify-content: flex-start;
 	z-index: 3;
  }
+
+
+ul.nav {
+	background-color: transparent !important ;
+}
 
   .nav {
  	justify-content: flex-end;
@@ -100,6 +112,25 @@ html {
 	width: 170px;
 	height: 52px;
  }
+
+  .button8 {
+	margin-top: 30px;
+	margin: 0 10px;
+	background: #C86957;
+	border: 1px solid #C86957;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	width: 115px;
+	height: 45px;
+	font-size: 17px;
+ }
+ input.cantidad{
+	width: 115px;
+	height: 45px;
+	border: 1px solid #C86957;
+	padding-left: 15px;
+ }
   
  
 /****************intro******************/
@@ -118,6 +149,8 @@ html {
  a.nav-link:hover, a.nav-link:focus {
 	color: #C86957;
  }
+
+
 
  #intro {
 	background: rgba(34, 34, 34, .6) !important;
@@ -405,6 +438,36 @@ p.manteles {
  button.colores.plata {
 	background-image: url("../assets/productos/manteleria/manteles/BallySilver.png");
  }
+
+ /*------------------------ Mis Productos ------------------------*/
+ h6.description{
+  	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #6D6969;	
+ }
+ h6.desc {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #565252;	
+ }
+ h5.desc {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #6D6969;	
+ }
+ .button9 {
+    margin: 16px 0 10px 0;
+    background: transparent !important;
+    border: 1px solid #C86957;
+    color: #6D6969;
+    padding: 0 10px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 170px;
+    height: 39px;
+    text-align: left;
+}
+
 
 /* ********************************  end seccion de fotos  *************************/
 
