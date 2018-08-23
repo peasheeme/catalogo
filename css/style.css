@@ -293,7 +293,41 @@ ul.nav {
  .seleccion {
  	cursor:pointer;
  }
-/*------------------------ Manteleria ------------------------*/
+
+ /* ******************************** Modal Producto  *************************/
+
+.seccionContenido .seccionImagenes{
+    float: left;
+    width: 100%;
+}
+
+.seccionContenido .divImagenGaleria {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.seccionContenido .divImagenGaleria img{
+    height: 91px;
+    margin-bottom: 20px;
+   }
+
+.seccionContenido .divImagenGaleria img:hover, img:active {
+    border: 2px solid #C86957;
+    cursor: pointer;
+}
+
+.seccionContenido .divImagenMuestra {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+/*------------------------ PRODUCTO------------------------*/
 .portfolio-item-description {
  	color: #7C7777;
  	font-size: 14px;
@@ -313,7 +347,7 @@ ul.nav {
  	color: #C86957;
 }
  
-/*------------------------ tablas Modales ------------------------*/
+/*------------------------ tablas Modales  producto------------------------*/
 .seccionModal {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -323,32 +357,7 @@ ul.nav {
 	cursor:pointer;
 }
 
-/* Tamanio que va a medir la caja de la foto*/
-.faded ul.big-image li {
-	max-width: 100%;
-	height: auto;
-	position: relative;
-}
-
-ul.pagination li  {
-	display: inline-block;
-	/*width: 139px;*/
-	width: 142px;
-}
-
-.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: -7%;
-	margin-left: -15px;
-	margin-bottom: 0px;
-	}
-
-
-/*------------------------ Manteles ------------------------*/
+/*------------------------ PRODUCTO modal  ------------------------*/
 
 .titulos {
  	font-family: 'Raleway', sans-serif;
@@ -357,7 +366,7 @@ ul.pagination li  {
 	font-size: 32px; 
  }
  .coloress {
-	padding:20px 10px 20px 0; 
+	padding:10px 0 0 15px; 
  }
  .button4 {
 	background: #C86957;
@@ -368,8 +377,7 @@ ul.pagination li  {
 	font-weight: 400;
 	width: 190px;
 	height: 52px;
-	margin-bottom: 35px;
-	margin-left: 35px;
+	
  }
  .button5 {
 	background: #C86957;
@@ -396,29 +404,28 @@ ul.pagination li  {
 	margin-left: 20px;
  }
 
- h5.manteles {
- 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-
- }
  h3.manteles {
  	padding-top: 20px;
  	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 32px; 
  }
-p.manteles {
- 	margin-top: 20px;
+p.d {
+ 	margin: 20px 0;
  	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	color: #999999;
+	padding-bottom: 20px;
  }
- .mantel {
- 	margin-left: 35px;
+ .botones {
+	margin-top: 20px;
+	text-align: right;
  }
- h5.mantel {
+ 
+ h5.d {
  	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
+	margin: 20px 0 20px 0;
  }
  p.mantel {
  	margin-top: 20px;
@@ -426,6 +433,12 @@ p.manteles {
 	font-weight: 400;
 	color: #999999;
  }
+
+ .margen-fotos{
+ 	margin-bottom: 70px;
+ }
+
+
  button.colores{
  	width: 50px;
  	height: 50px;
@@ -469,26 +482,21 @@ p.manteles {
 }
 
 
+
 /* ********************************  end seccion de fotos  *************************/
 
 
 @media screen and (max-width:1200px) {
-ul.pagination li  {
-	display: inline-block;
-	/*width: 139px;*/
-	width: 108px;
+.seccionContenido .divImagenGaleria img{
+    height: 75px;
+    margin-bottom: 20px;
+   }
+.titulos {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin: 0px 0;
+    font-size: 31px;
 }
-.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: 20%;
-	margin-left: -15px;
-	margin-bottom: 0px;
-	
-	}
 
 }
 html {
@@ -504,8 +512,6 @@ html {
 	font-weight: 300;
 	text-align: center;
 	font-size: 15px;	
-	
-
  }
  .nav {
  	justify-content: center;
@@ -526,24 +532,6 @@ html {
  	justify-content: center;
  }
  
-ul.pagination li  {
-	display: inline-block;
-	/*width: 139px;*/
-	width: 108px;
-}
-
-.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: -1%;
-	margin-left: -15px;
-	margin-bottom: 0px;
-	
-	}
-
  .button5 {
 	background: #C86957;
 	border: 2px solid #C86957;
@@ -555,6 +543,33 @@ ul.pagination li  {
 	height: 52px;
 	margin-bottom: 35px;
 	margin-left: -14px;
+ }
+ .seccionContenido .divImagenGaleria img{
+    height: 53px;
+    margin-bottom: 20px;
+   }
+
+  .botones {
+	margin-top: 0px;
+ }
+
+ h5.desc {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #6D6969;
+    margin-top: 100px;
+    margin-left: 31px;
+}
+
+p.d {
+    margin: 0px 33px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    padding-bottom: 20px;
+}
+ .botones {
+ 	margin-top: -60px;
  }
 
  }
@@ -624,35 +639,6 @@ a.nav-link {
 	justify-content: flex-center;
 	background: rgba(34, 34, 34, .5) !important;
  }
-
-
-
-
-.faded ul.big-image li {
-	max-width: 550px;
-	height: auto;
-	margin-top: 25px;
-	padding-right: 25px;
-
-}
-
- ul.pagination li  {
-	display: inline-block;
-	/*width: 139px;*/
-	width: 127px;
-}
-.pagination {
-	list-style:none;
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	position: absolute;
-	bottom: -1%;
-	margin-left: -15px;
-	margin-bottom: 0px;
-	
-	}
-
 	.coloress {
     padding: 3px 10px 20px 0;
     margin-left: 0px;
@@ -675,8 +661,42 @@ a.nav-link {
  html {
  overflow-x:hidden;
  }
- }
 
+ .titulos {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin: 0px 0;
+    font-size: 31px;
+    margin: 20px 0;
+}
+
+h5.d {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0px 0 10px 0;
+}
+h5.desc {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #6D6969;
+    margin-top: 64px;
+    margin-left: 28px;
+}
+
+p.d {
+    margin: 0px 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    padding-bottom: 20px;
+}
+
+.seccionContenido .divImagenGaleria img{
+    height: 59px;
+    margin-bottom: 20px;
+   }
+
+ }
 
  @media screen and (max-width: 747px){
  a.nav-link {
@@ -696,6 +716,8 @@ a.nav-link {
 	justify-content: flex-center;
 	background: rgba(34, 34, 34, .5) !important;
  }
+
+
 }
 
  /*------------------------650-------------------*/
@@ -733,17 +755,12 @@ a.nav-link {
 
  /*------------------------Celular-------------------*/
 @media screen and (max-width: 542px) { 
-	ul.pagination li  {
-	display: inline-block;
-	/*width: 139px;*/
-	width: 127px;
+	
 }
 html {
  overflow-x:hidden;
  }
 
-
-	
 	.mantel {
 		margin-left: -15px;
 		margin-top: -20px;
@@ -759,8 +776,7 @@ html {
 		margin-top: 420px;
 	}
 
-	
- }
+
 }
 
 /*------------------------Celular-------------------*/
@@ -877,7 +893,13 @@ html {
 	justify-content: flex-center;
 	background: rgba(34, 34, 34, .5) !important;
  }
+}
 
+@media screen and (max-width: 499px) {
+ .seccionContenido .divImagenGaleria img {
+    height: 35px;
+    margin-bottom: 20px;
+}
 }
 
 @media screen and (max-width: 367px) {
@@ -900,5 +922,15 @@ html {
 	justify-content: flex-center;
 	background: rgba(34, 34, 34, .5) !important;
  }
+
+ .seccionContenido .divImagenGaleria img {
+    height: 28px;
+    margin-bottom: 20px;
 }
+}
+
+
+
+
+
 

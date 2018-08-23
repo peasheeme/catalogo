@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
+
+ <link rel="stylesheet" href="css/animate.min.css"> 
 <!-- Bootstrap flexbox -->
     <link rel="stylesheet" href="css/bootstrap-flex.min.css">
 <!-- Google fonts-->
@@ -20,6 +22,7 @@
 <!-- Modales full screen-->   
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+   
 <!-- Estilos -->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -32,17 +35,17 @@
 
 		<div class="row contentIntro">
 
-      <div class="navbar-header menuHamburguesa col-xs-2 col-md-1  justify-content-start">
+      <div class="navbar-header menuHamburguesa  justify-content-start">
       <a  class=" navbar-toggle pull-xs-right hidden-md-up" data-toggle="collapse" href="#menu-hambuerguesa" role="button" aria-expanded="false" aria-controls="menu-hambuerguesa">
         <img src="assets/icons/menu.png" alt="menu">
       </a>
     </div>
-			<figure class="col-xs-9 col-md-12 col-lg-2 justify-content-center " >
-				<img class="logo" src="assets/icons/logo.png">
-			</figure>
+      <figure class="col-xs-9 col-md-12 col-lg-2 justify-content-center " >
+        <img class="logo" src="assets/icons/logo.png">
+      </figure>
       
 
-      <div class="nav col-xs-12 justify-md-content-center col-lg-9  justify-lg-content-center  ">
+      <div class="nav col-xs-12 justify-md-content-center col-lg-10  justify-lg-content-center  ">
         <nav class="navbar-custom" role="navigation">
           <div id="menu-hambuerguesa" class="navbar-toggleable-sm navbar  collapse" >
             <ul class="nav ">
@@ -62,7 +65,7 @@
                   <a class="nav-link" href="#Contacto">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">MIS PRODUCTOS</a>
+                  <a class="nav-link" href="misproductos.html">MIS PRODUCTOS</a>
                 </li>
             </ul>
           </div>
@@ -117,14 +120,17 @@
               <td><input class="cantidad" type="number" name="cantidad"> <button class="button8">Eliminar</button></td>
             </tr>
           </tbody>
-        </table>
+        </table><br>
         <div class="text-right">
         		 <button  type="button" id="btn-close-modal" class=" button5" data-toggle="modal" data-target="#myModal"> Cotizar</button>
         </div>
           
  </div>
 </section>
-<section>
+ 
+ 
+
+
 <footer>
     <span class="espacio">Alma Morales Eventos </span> © Copyright 2018 <br>
        <div class="flex-items-middle">  Creación y Diseño por <a href="https://kalamedia.mx/" target="_blank"> <img src="assets/icons/kala.png"></a>
@@ -133,62 +139,6 @@
 <!--<section>  **************************** Modal de agregar producto*****************************-->
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h5 class="modal-title desc" id="myModalLabel">Cotizar</h5>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-       <div class="form-group row ">
-       		<div class="col-xs-12 col-sm-12 col-md-6" >
-       			<h5 class="desc">Datos Personales</h5>
-       			<div class="form-group">
-       			 <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre">
-				</div>
-
-				<div class="form-group">
-				  	<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-				</div>
-				<div class="form-group">
-				  	<input type="phone" id="c_email" class="form-control" name="c_phone" placeholder="Telefono">
-				</div>
-				      			
-       		</div>
-       		<div class="col-xs-12 col-sm-12 col-md-6" >
-       			<h5 class="desc">Datos del evento</h5>
-           
-             <input id="datepicker" width="276" placeholder="Fecha del evento" /><script>$('#datepicker').datepicker({uiLibrary: 'bootstrap4'});</script>
-            <div class="dropdown">
-              <button class="button9 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tipo de evento </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                 <button class="dropdown-item" type="button">Boda</button>
-                <button class="dropdown-item" type="button">XV años</button>
-                 <button class="dropdown-item" type="button">Graduación</button>
-                 <button class="dropdown-item" type="button">Baby shower</button>
-                 <button class="dropdown-item" type="button">Fiesta infantil</button>
-                 <button class="dropdown-item" type="button">Bautizos</button>
-                 <button class="dropdown-item" type="button">Primera comunión</button>
-                 <button class="dropdown-item" type="button">Fiesta infantil</button>
-                </div>
-              </div>
-
-       		</div>
-		    </div>
-      
-        <div class="form-group">
-          <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Describe mas detalles de tu evento."></textarea>
-        </div>
-     
-      </div>
-      <div class="modal-footer">
-       <button type="button" class="button1" >Enviar</button>
-        <button type="button" class="button3" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
  <!-- Bootstrap -->
 	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -214,12 +164,13 @@
     <script type="text/javascript" src="js/jquery.faded.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 <!-- modales full screen -->
- 	
-        <script src="js/animatedModal.min.js"></script>
+ 	<script src="js/jquery.tabslet.min.js"></script>
+  <script src="js/animatedModal.min.js"></script>
   <script >
   	 $("#demo01").animatedModal();
 
   </script>
+
    
 
 

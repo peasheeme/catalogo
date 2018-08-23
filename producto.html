@@ -27,8 +27,7 @@
     <link rel="stylesheet" href="css/animate.min.css"> 
 <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
- 
-    
+  
 </head>
 <body>
 
@@ -341,78 +340,127 @@
   </div>
 </section>
 <section>
-<div id="animatedModal">
-	<div class="container seccionModal secciones2 ">
-				<div class="titulos hidden-md-up ">Manteles Baally </div>
-		<button type="button hidden-sm-down" class="close close-animatedModal" >
-          	<span>&times;</span>
-         </button>			
-		<div class=" row tab_container secciones ">
-			<div class="col-xs-12 col-md-8 " >
-				<div id="tab3" class="tab_content    ">
-						<div class="faded">
-							<ul class="big-image row">
-								 <li><img src="assets/productos/manteleria/manteles/bg6.jpg"></li>
-								<li><img src="assets/productos/manteleria/manteles/bg2.jpg"></li>
-				                 <img src="assets/productos/manteleria/manteles/bg3.jpg" >
-				                 <li><img src="assets/productos/manteleria/manteles/bg4.jpg" ></li>
-								<li><img src="assets/productos/manteleria/manteles/bg5.jpg" ></li>
-				                <li > <img src="assets/productos/manteleria/manteles/bg6.jpg"> </li>
-							</ul>
-							<ul class="pagination row ">
-								 <li><a href="#" rel="0"><img src="assets/productos/manteleria/manteles/bg6.jpg" width="125"></a></li>
-								 <li><a href="#" rel="1"><img src="assets/productos/manteleria/manteles/bg2.jpg" width="125"></a></li>
-								<li><a href="#" rel="2"><img src="assets/productos/manteleria/manteles/bg4.jpg" width="125"></a></li>
-								<li class=""><a href="#" rel="3"><img src="assets/productos/manteleria/manteles/bg4.jpg" width="125"></a></li>
-								<li class="hidden-md-down"><a href="#" rel="4"><img src="assets/productos/manteleria/manteles/bg3.jpg" width="125"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div id="tab4" class="tab_content">
-						<div class="faded">
-							<ul class="big-image">
-								 <li><img src="assets/productos/manteleria/manteles/1.jpg"></li>
-								<li><img src="assets/productos/manteleria/manteles/2.jpg"></li>
-				                 <img src="assets/productos/manteleria/manteles/3.jpg" >
-				                 <li><img src="assets/productos/manteleria/manteles/4.jpg" ></li>
-								<li><img src="assets/productos/manteleria/manteles/5.jpg" ></li>
-				                <li > <img src="assets/productos/manteleria/manteles/6.jpg"> </li>
-							</ul>
-							<ul class="pagination row ">
-								 <li><a href="#" rel="0"><img src="assets/productos/manteleria/manteles/1.jpg" width="125"></a></li>
-								 <li><a href="#" rel="1"><img src="assets/productos/manteleria/manteles/2.jpg" width="125"></a></li>
-								<li><a href="#" rel="2"><img src="assets/productos/manteleria/manteles/4.jpg" width="125"></a></li>
-								<li class=""><a href="#" rel="3"><img src="assets/productos/manteleria/manteles/5.jpg" width="125"></a></li>
-								<li class="hidden-md-do"><a href="#" rel="4"><img src="assets/productos/manteleria/manteles/6.jpg" width="125"></a></li>
-							</ul>
-						</div>
-					</div>
-	    		</div>
-		<div class="col-xs-12 col-md-4">
-				<div class="titulos mantel-down hidden-sm-down" >Manteles Barrotado </div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <h5 class="modal-title desc" id="myModalLabel">Cotizar</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group row ">
+       		<div class="col-xs-12 col-sm-12 col-md-6" >
+       			<h5 class="desc">Datos Personales</h5>
+       			<div class="form-group">
+       			 <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre">
+				</div>
+
+				<div class="form-group">
+				  	<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+				</div>
+				<div class="form-group">
+				  	<input type="phone" id="c_email" class="form-control" name="c_phone" placeholder="Telefono">
+				</div>
+				      			
+       		</div>
+       		<div class="col-xs-12 col-sm-12 col-md-6" >
+       			<h5 class="desc">Datos del evento</h5>
+           
+             <input id="datepicker" width="276" placeholder="Fecha del evento" /><script>$('#datepicker').datepicker({uiLibrary: 'bootstrap4'});</script>
+            <div class="dropdown">
+              <button class="button9 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tipo de evento </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                 <button class="dropdown-item" type="button">Boda</button>
+                <button class="dropdown-item" type="button">XV años</button>
+                 <button class="dropdown-item" type="button">Graduación</button>
+                 <button class="dropdown-item" type="button">Baby shower</button>
+                 <button class="dropdown-item" type="button">Fiesta infantil</button>
+                 <button class="dropdown-item" type="button">Bautizos</button>
+                 <button class="dropdown-item" type="button">Primera comunión</button>
+                 <button class="dropdown-item" type="button">Fiesta infantil</button>
+                </div>
+              </div>
+
+       		</div>
+		    </div>
+      
+        <div class="form-group">
+          <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Describe mas detalles de tu evento."></textarea>
+        </div>
+     
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="button1" >Enviar</button>
+        <button type="button" class="button3" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div id="animatedModal">
+	<div class="container seccionModal seccionContenido  ">
+		<div class="titulos hidden-md-up ">Manteles Baally </div>
+		<button type="button hidden-sm-down" class="close close-animatedModal"> <span>&times;</span></button>			
+	<div class=" row tab_container margen-fotos ">
+		<div class="col-xs-12 col-md-8 col-lg-8  " >
+			<div id="tab3" class="tab_content    ">
+				<div class="divImagenMuestra">
+		            <img src="assets/productos/manteleria/manteles/bg6.jpg" alt="" class="imagenGaleriaGrande" id="espacioImagen">
+		        </div>
+		        <div class="divImagenGaleria">
+		            <img src="assets/productos/manteleria/manteles/bg6.jpg" id="1" value="1" class="imagen-galeria" alt="" onmouseover="cambia('1');">
+		            <img src="assets/productos/manteleria/manteles/bg3.jpg" id="2" value="2" class="imagen-galeria" alt="" onmouseover="cambia('2');">
+		            <img src="assets/productos/manteleria/manteles/bg2.jpg" id="3" value="3" class="imagen-galeria" alt="" onmouseover="cambia('3');">
+		            <img src="assets/productos/manteleria/manteles/bg4.jpg"" id="4" value="4" class="imagen-galeria" alt="" onmouseover="cambia('4');">
+		            <img src="assets/productos/manteleria/manteles/bg5.jpg" id="5" value="5" class="imagen-galeria" alt="" onmouseover="cambia('5');">
+		        </div>
+			</div>
+			<div id="tab4" class="tab_content    ">
+				<div class="divImagenMuestra">
+		            <img src="assets/productos/manteleria/manteles/bg5.jpg" alt="" class="imagenGaleriaGrande" id="espacioImagen2">
+		        </div>
+		        <div class="divImagenGaleria">
+		            <img src="assets/productos/manteleria/manteles/bg5.jpg" id="6" value="6" class="imagen-galeria" alt="" onmouseover="cambia('6');">
+		            <img src="assets/productos/manteleria/manteles/bg3.jpg" id="7" value="7" class="imagen-galeria" alt="" onmouseover="cambia('7');">
+		            <img src="assets/productos/manteleria/manteles/bg2.jpg" id="8" value="8" class="imagen-galeria" alt="" onmouseover="cambia('8');">
+		            <img src="assets/productos/manteleria/manteles/bg4.jpg"" id="9" value="9" class="imagen-galeria" alt="" onmouseover="cambia('9');">
+		            <img src="assets/productos/manteleria/manteles/bg5.jpg" id="10" value="10" class="imagen-galeria" alt="" onmouseover="cambia('10');">
+		        </div>
+			</div>
+			
+	    </div>
+
+		<div class="col-xs-12 col-md-4 col-lg-4">
+				<div class="titulos hidden-sm-down" >Manteles Barrotado </div>
 				<a href="#"><button  class="button4 hidden-sm-down" type="button" data-toggle="modal" data-target="#agregar">Agregar</button></a>
-    			<h5 class="mantel descript ">Color</h5>
-                <ul class="tabs row coloress mantel  ">
+    			<h5 class="d">Color</h5>
+                <ul class="tabs row coloress  ">
 					<li><a href="#tab3"> <button  type="button" class="colores dorado"></button> </a></li>
 					<li><a href="#tab4"> <button  type="button" class="colores plata"></button> </a></li>
 				</ul>
-				<h5 class="mantel hidden-md-down ">Descripción</h5>
-				<p class="mantel  hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, reprehenderit ratione magnam obcaecati eveniet porro sit! Debitis cumque blanditiis dolore animi optio, quasi maxime. Consequuntur dolorem, tempore quos omnis labore!</p>
+				<h5 class="hidden-md-down d ">Descripción</h5>
+				<p class=" d hidden-md-down ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, reprehenderit ratione magnam obcaecati eveniet porro sit! Debitis cumque blanditiis dolore animi optio, quasi maxime. Consequuntur dolorem, tempore quos omnis labore!</p>
     		</div>
-		</div>
+		
+
+
 		<div class="row desc">
-			<h5 class="hidden-lg-up ">Descripción</h5>
-			<p class=" mantel-movil hidden-lg-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, reprehenderit ratione magnam obcaecati eveniet porro sit! Debitis cumque blanditiis dolore animi optio, quasi maxime. Consequuntur dolorem, tempore quos omnis labore!</p>
+			<h5 class="hidden-lg-up desc ">Descripción</h5>
+			<p class="d mantel-movil hidden-lg-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, reprehenderit ratione magnam obcaecati eveniet porro sit! Debitis cumque blanditiis dolore animi optio, quasi maxime. Consequuntur dolorem, tempore quos omnis labore!</p>
+		</div>
 		</div>	
-		<div class="row">
+		<div class="row ">
 			<div class="col-xs-12 col-lg-6"></div>
-			<div class="col-xs-12 col-md-12 col-lg-6 justify-content-end pull-md-right">
+			<div class="col-xs-12 col-md-12 col-lg-6 justify-content-end pull-md-right botones">
 				<button  type="button" class=" button5" data-toggle="modal" data-target="#agregar"> Agregar producto</button>
 				<button  type="button" id="btn-close-modal" class="close-animatedModal button6"> cerrar</button>
 			</div>
 		</div>
 	   </div>
-	</div>
+	</div> 
+
+
 
 <div class="modal fade" id="agregar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
@@ -457,10 +505,6 @@
 </div>
 
 
-
-
-
-
 <footer>
     <span class="espacio">Alma Morales Eventos </span> © Copyright 2018 <br>
        <div class="flex-items-middle">  Creación y Diseño por <a href="https://kalamedia.mx/" target="_blank"> <img src="assets/icons/kala.png"></a>
@@ -482,22 +526,29 @@
   		<script src="js/jquery.tabslet.min.js"></script>
 <!-- Mi javascript --->
       	<script src="js/javascript.js"></script>
-<!-- images/productos -->
-    <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
-    <script type="text/javascript" src="js/tabs.js"></script>
-    <script type="text/javascript" src="js/jquery.faded.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+<!-- tabs modal -->
+         <script type="text/javascript" src="js/tabs.js"></script>
 <!-- modales full screen -->
- 	
-        <script src="js/animatedModal.min.js"></script>
+         <script src="js/animatedModal.min.js"></script>
   <script >
   	 $("#demo01").animatedModal();
-  	 $("#demo02").animatedModal2();
-
-
-
-
+  	
   </script>
+<!-- tabs modal -->
+  <script type="text/javascript">
+  function cambia(val){
+    var nodos = document.getElementById(val);
+    var atributo = nodos.attributes.getNamedItem("src").nodeValue;
+    //alert(atributo);
+    var elementoRecibe = document.getElementById("espacioImagen");
+    elementoRecibe.setAttribute("src", atributo);
+    var elementoRecibe2 = document.getElementById("espacioImagen2");
+    elementoRecibe2.setAttribute("src", atributo);
+  }
+</script>
+
+
+
 
 
 </body>
