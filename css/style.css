@@ -388,7 +388,7 @@ ul.nav {
 	font-weight: 400;
 	width: 190px;
 	height: 52px;
-	margin: 20px;
+	margin: 0 10px;
  }
   .button6 {
 	margin-bottom: 115px;
@@ -400,7 +400,7 @@ ul.nav {
 	font-weight: 400;
 	width: 190px;
 	height: 52px;
-	margin-left: 20px;
+	margin: 0 10px;
  }
 
  h3.manteles {
@@ -550,7 +550,7 @@ html {
 	width: 190px;
 	height: 52px;
 	margin-bottom: 35px;
-	margin-left: -14px;
+	margin: 0 10px;
  }
  .seccionContenido .divImagenGaleria img{
     height: 53px;
@@ -972,7 +972,14 @@ html {
  }
 
  .seccionContenido .divImagenGaleria img {
-    height: 28px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 347px) {
+.seccionContenido .divImagenGaleria img {
+    height: 33px;
     margin-bottom: 20px;
 }
 }
