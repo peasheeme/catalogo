@@ -314,7 +314,7 @@ ul.nav {
    }
 
 .seccionContenido .divImagenGaleria img:hover, img:active {
-    border: 2px solid #C86957;
+  
     cursor: pointer;
 }
 
@@ -366,7 +366,7 @@ ul.nav {
 	font-size: 32px; 
  }
  .coloress {
-	padding:10px 0 0 15px; 
+	padding:0 0 0 15px; 
  }
  .button4 {
 	background: #C86957;
@@ -388,8 +388,7 @@ ul.nav {
 	font-weight: 400;
 	width: 190px;
 	height: 52px;
-	margin-bottom: 35px;
-	margin-left: 35px;
+	margin: 20px;
  }
   .button6 {
 	margin-bottom: 115px;
@@ -435,7 +434,7 @@ p.d {
  }
 
  .margen-fotos{
- 	margin-bottom: 70px;
+ 	margin-bottom: 50px;
  }
 
 
@@ -446,10 +445,19 @@ p.d {
  	margin-right: 10px;
  }
  .colores.dorado {
-	background-image: url("../assets/productos/manteleria/manteles/BallyGold.png");
+	/*background-image: url("../assets/productos/manteleria/manteles/BallyGold.png");*/
+	background: #C7AC77;
+	width: 40px;
+	height: 40px;
  }
  button.colores.plata {
-	background-image: url("../assets/productos/manteleria/manteles/BallySilver.png");
+	/*background-image: url("../assets/productos/manteleria/manteles/BallySilver.png");*/
+	background: #8a9597;
+	width: 40px;
+	height: 40px;
+ }
+ .colores.rosa{
+ 	background: #8a9597;
  }
 
  /*------------------------ Mis Productos ------------------------*/
@@ -557,7 +565,6 @@ html {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #6D6969;
-    margin-top: 100px;
     margin-left: 31px;
 }
 
@@ -640,7 +647,7 @@ a.nav-link {
 	background: rgba(34, 34, 34, .5) !important;
  }
 	.coloress {
-    padding: 3px 10px 20px 0;
+    padding: 0 0 20px 0;
     margin-left: 0px;
 }
 	.mantel {
@@ -675,6 +682,12 @@ h5.d {
     font-weight: 400;
     margin: 0px 0 10px 0;
 }
+
+h5.e {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0px 0 10px 27px;
+}
 h5.desc {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -682,6 +695,7 @@ h5.desc {
     margin-top: 64px;
     margin-left: 28px;
 }
+
 
 p.d {
     margin: 0px 28px;
@@ -897,7 +911,41 @@ html {
 
 @media screen and (max-width: 499px) {
  .seccionContenido .divImagenGaleria img {
-    height: 35px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+.button5 {
+    background: #C86957;
+    border: 2px solid #C86957;
+    color: white;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 170px;
+    height: 52px;
+    margin-bottom: 20px;
+    
+}
+.button6 {
+    
+    background: transparent !important;
+    border: 2px solid #C86957;
+    color: #C86957;
+    padding: 15px 38px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 170px;
+    height: 52px;
+    
+}
+
+ .botones {
+	text-align: center;
+ }
+}
+@media screen and (max-width: 375px) {
+ .seccionContenido .divImagenGaleria img {
+    height: 42px;
     margin-bottom: 20px;
 }
 }
