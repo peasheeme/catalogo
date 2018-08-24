@@ -46,6 +46,17 @@ html {
  h5 {
  	    margin-left: 31px;
  }
+
+ .table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #D1AE9B;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: .5px solid #D1AE9B;
+}
  
  .menuHamburguesa {
 	text-align: left;
@@ -119,21 +130,21 @@ ul.nav {
 
   .button8 {
 	margin-top: 30px;
-	margin: 0 10px;
-	background: #C86957;
-	border: 1px solid #C86957;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	width: 115px;
-	height: 45px;
-	font-size: 17px;
+    margin: 0 10px;
+    background: #C86957;
+    border: 1px solid #C86957;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    width: 44px;
+    height: 40px;
+    /* font-size: 24px; */
  }
  input.cantidad{
-	width: 115px;
-	height: 45px;
-	border: 1px solid #C86957;
-	padding-left: 15px;
+	width: 80px;
+    height: 40px;
+    border: 1px solid #C86957;
+    padding-left: 15px;
  }
   
  
@@ -429,6 +440,15 @@ p.d {
  	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	margin: 20px 0 20px 0;
+	color: #565252;
+	font-size: 18px;
+ }
+ h5.c {
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	margin: 20px 0 20px 0;
+	color: #59585B;
+	font-size: 26px;
  }
  p.mantel {
  	margin-top: 20px;
@@ -983,6 +1003,31 @@ html {
  .seccionContenido .divImagenGaleria img {
     height: 40px;
     margin-bottom: 20px;
+}
+
+input.cantidad {
+    width: 65px;
+    height: 40px;
+    border: 1px solid #C86957;
+    padding-left: 6px;
+}
+.button8 {
+    margin-top: 30px;
+    margin: 0 10px;
+    background: #C86957;
+    border: 1px solid #C86957;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    /* font-size: 24px; */
+}
+h6.description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #6D6969;
+    font-size: 14px;
 }
 }
 
