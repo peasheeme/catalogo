@@ -140,11 +140,15 @@ ul.nav {
     height: 40px;
     /* font-size: 24px; */
  }
- input.cantidad{
+ input.cantidad {
 	width: 80px;
     height: 40px;
     border: 1px solid #C86957;
     padding-left: 15px;
+ }
+ h5.subt {
+ 	font-family: 'Raleway', sans-serif;
+
  }
   
  
