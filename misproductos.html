@@ -15,9 +15,10 @@
      <link rel="stylesheet" href="css/bootstrap-flex.min.css">
     <!-- Bootstrap CSS Modales-->   
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
     <!-- Google fonts-->
      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700|Raleway:100,300,400,500|Roboto:400,700" rel="stylesheet">
-     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    
      <!-- Estilos -->
      <link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
@@ -215,7 +216,11 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
  <script>$('#datepicker').datepicker({uiLibrary: 'bootstrap4'});</script>
-
+<script>
+$(function () {
+$("#datepicker").datepicker();
+});
+</script>
    
 
 
