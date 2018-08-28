@@ -159,9 +159,9 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6" >
             <h5 class="d">Datos del evento</h5>
-               <input type='date' class=' form-control' data-language='es' placeholder="Fecha del evento" />              
-             <!-- <input type='' class='datepicker-here form-control' data-language='es' placeholder="Fecha del evento" /> -->
-            <div class="dropdown">
+               <input id="fechaEvento"
+               class=' datepicker-here form-control' data-language='es' placeholder="Fecha del evento" />
+          <div class="dropdown">
               <button class="button9 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tipo de evento </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                  <button class="dropdown-item" type="button">Boda</button>
@@ -217,10 +217,9 @@
    <script >
      // Initialization
 //$('#my-element').datepicker([options])
-// Access instance of plugin
-$('#my-element').data('datepicker')
-
-
+$('#fechaEvento').data({
+  autoClose: true
+});
    </script>
 
 
