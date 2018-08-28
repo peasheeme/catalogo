@@ -121,9 +121,6 @@
   </div>
 </section>
  
- 
-
-
 <footer>
     <span class="espacio">Alma Morales Eventos </span> © Copyright 2018 <br>
        <div class="flex-items-middle">  Creación y Diseño por <a href="https://kalamedia.mx/" target="_blank"> <img src="assets/icons/kala.png"></a>
@@ -161,19 +158,17 @@
             <h5 class="d">Datos del evento</h5>
                <input id="fechaEvento"
                class=' datepicker-here form-control' data-language='es' placeholder="Fecha del evento" />
-          <div class="dropdown">
-              <button class="button9 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tipo de evento </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                 <button class="dropdown-item" type="button">Boda</button>
-                <button class="dropdown-item" type="button">XV años</button>
-                 <button class="dropdown-item" type="button">Graduación</button>
-                 <button class="dropdown-item" type="button">Baby shower</button>
-                 <button class="dropdown-item" type="button">Fiesta infantil</button>
-                 <button class="dropdown-item" type="button">Bautizos</button>
-                 <button class="dropdown-item" type="button">Primera comunión</button>
-                 <button class="dropdown-item" type="button">Fiesta infantil</button>
-                </div>
-              </div>
+           <select class="button9" placeholder="Tipo de evento" >
+              <option value="1" >Tipo de evento</option>
+                <option value="Boda">Boda</option>
+                <option value="XV">XV Años</option>
+                <option value="Graduacion">Graduación</option>
+                <option value="Baby">Baby Shower</option>
+                <option value="infantil">Fiesta Infantil</option>
+                <option value="bautizos">Bautizos</option>
+                <option value="comunion">Primera comunión</option>
+                <option value="despedida">Despedida de soltera</option>
+            </select>
 
           </div>
         </div>
@@ -184,8 +179,8 @@
      
       </div>
       <div class="modal-footer">
-       <button type="button" class="button1" >Enviar</button>
-        <button type="button" class="button3" data-dismiss="modal">Cerrar</button>
+       <button type="submit"  value="Submit" class="button1" >Enviar</button>
+        <button type="button"  class="button3" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -220,6 +215,13 @@
 $('#fechaEvento').data({
   autoClose: true
 });
+
+
+   </script>
+   <script >
+     $('.dropdown-toggle').dropdown({
+      data-toggle="dropdown"
+    });
    </script>
 
 
