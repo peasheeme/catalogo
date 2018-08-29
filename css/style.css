@@ -410,7 +410,7 @@ h5.nosotros {
    }
 
 .seccionContenido .divImagenGaleria img:hover, img:active {
-  
+
     cursor: pointer;
 }
 
@@ -582,7 +582,7 @@ p.d {
 	color: #6D6969;	
  }
  .button9 {
-    margin: 16px 0 10px 0;
+    
     background: transparent !important;
     border: 1px solid #C86957;
     color: #6D6969;
@@ -768,8 +768,8 @@ a.nav-link {
 	padding-left: 200px;
 
  }
- a.nav-link.active{
- 	background: transparent !important;
+ a.active{
+ 	background: red;
  	 }
 
  .nav {
@@ -1026,6 +1026,13 @@ html {
 	padding-left: 30px;
 
  }
+ a:focus{
+    color: #c86957;
+    text-decoration: underline;
+}
+button:focus {
+	 color: #c86957;
+}
 
  li.nav-item {
 	margin: 10px 50px;
