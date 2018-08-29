@@ -86,7 +86,7 @@ ul.nav {
  .encabezados {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	margin: 70px 0;
+	margin: 50px 0;
 	font-size: 36px;
  }
   .contenedores { 
@@ -94,10 +94,10 @@ ul.nav {
  }
  .catalogo {
  	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	padding: 70px 0;
-	font-size: 36px;
-	background-color: #EBEBEB;	
+    font-weight: 300;
+    padding: 50px 0 50px 0;
+    font-size: 36px;
+    background-color: #EBEBEB;	
  }
 
  .button1 {
@@ -250,35 +250,51 @@ h5.nosotros {
 }
 
 .nosotros-subtitulo {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin: 0px 0 20px 0;
     color: #565252;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 
 /****************CAROUSEL******************/
  
  a.subtitulo1 h5.margen-catalogo {
-	padding: 0 40px 50px 0 ;
+	padding: 0 40px 30px 0 ;
 	text-align: center;
 	display: inline-block;
-	margin: 0px 25px;
+	margin: 0px 0px;
 
  }
  
- a.subtitulo1,h5.margen-catalogo:hover {
+ a.subtitulo1,h5.margen-catalogo:hover , h5.margen-catalogo:focus{
  	text-decoration-line: none;
  	color: #C86957;
 
  }
+   li:focus {
+ 	background-color: #C86957;
+
+ }
+
  section.carousel {
  	background-color:#EBEBEB; 
  	padding: 0 0 50px 0;
  }
-  .owl-theme .owl-nav.disabled+.owl-dots {
-     margin-bottom: 50px ;
+  /*.owl-theme .owl-nav.disabled+.owl-dots {
+     margin-bottom: 50px ;*/
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -53px;
+    z-index: 200;
+}
+.owl-theme .owl-nav {
+    margin-top: -30px;
+    color: #ebebeb;
 }
 
  .spacing {
@@ -310,6 +326,7 @@ h5.nosotros {
 	font-weight: 400;
 	color: #999999;
  }
+ 
 
  .redesSociales {
 	margin: 10px 10px 0 0; 
@@ -575,6 +592,31 @@ p.d {
     width: 170px;
     height: 39px;
     text-align: left;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 14px;
+	right: 3%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/to-top1.png") no-repeat 0px 0px;
+}
+
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
 }
 
 
@@ -1031,12 +1073,7 @@ html {
 	text-align: center;
  }
 
- .form-control {
-    border: 1px solid #C86957;
-    border-radius: unset;
-    height: 50px;
 
-}
 .button9 {
     margin: 16px 0 10px 0;
     background: transparent !important;
